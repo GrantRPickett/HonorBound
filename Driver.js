@@ -130,9 +130,8 @@ for ( var i = 0; i < 100000; i++) {
             defd.choice = choices[pick] || choices[0];
          }
          if (defd.ethic[2] == "distrustRate") {
-            value = choices.splice(choices.indexOf[declare], 1)[0];
-            defd.choice = choices[Math.floor(Math.random() * 2)];
-            choices.push(value[0]);
+            pick = choices.indexOf(declare) - 1;
+            defd.choice = choices[pick] || choices[3];
          }
       } else if (defd[defd.ethic[3]] > Math.random()) {
          if (defd.ethic[3] == "trustRate") {
